@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Tarefas Escritorio </h2>
+    </header>
+    <div class="lista-cadastro">
+        <input type="text" placeholder="nome da tarefa" name="nome_tarefa"/>
+        <input type="date" name="calendario" id="calendario">
+        <input type="time" name="horario" id="horario">
+        <input type="submit" name="acao" value="Cadastrar"/>
+    </div>
+
+    <div class="lista-tarefas">
+        
+        
+        
+    </div>
+    <div class="tarefas">
+        <h1>Tarefas: </h1>
+        <form>
+            <label for="mes">Selecione o mês e ano:</label>
+            <input type="month" id="mes" name="mes">
+            <button name="consultar">Consultar Tarefas</button>
+            <button name="gerar_excel">Gerar Excel</button>
+
+          </form>
+          
+    </div>
+    <script src="tarefas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+</body>
+</html>
